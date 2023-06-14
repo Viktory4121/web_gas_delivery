@@ -1,0 +1,182 @@
+/* $font-os: 'Open Sans', sans-serif;
+$font-ro: 'Russo One', sans-serif;
+$font-main-color: #2194FF; */
+/* ========================================= */
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background: #222;
+    height: 100%;
+    width: 100%;
+}
+
+.font-ro {
+    font-family: 'Russo One';
+}
+
+.font-os {
+    font-family: 'Open Sans';
+}
+
+.flex {
+    display: flex;
+}
+
+.total-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* =============================================== */
+
+
+
+.header {
+    align-items: center;
+    display: fixed;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+
+#header-logo {
+    align-items: center;
+}
+
+#header-logo p {
+    border-left: 1px solid #fff;
+    color: #2194FF;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+    margin-left: 25px;
+    margin-top: 20px;
+    max-width: 150px;
+    padding-left: 20px;
+}
+
+#header-phone a {
+    color: #F1F1F1;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+#header-phone button {
+    background: transparent;
+    border: 0;
+    color: #2194FF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-decoration-line: underline;
+}
+
+
+
+/* =========================================== */
+
+
+
+#main-info {
+    padding: 2vw 0 2vw 5vw;
+}
+
+.weather-item + .weather-item {
+    margin-left: 1vw;
+}
+
+.weather-img + .weather-img {
+    margin-left: 0.5vw;
+}
+
+.weather-item p {
+    color: #F1F1F1;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+
+
+.main-item h1 {
+    color: #2194FF;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 63px;
+    margin: 1vw 0;
+}
+
+#main-item-moscow {
+    color: #F1F1F1;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-bottom: 3vw;
+}
+
+#main-item-delivery {
+    color: #F1F1F1;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-top: 1vw;
+}
+
+
+
+/* ============================================================== */
+
+
+
+.big-button {
+    background: #2194FF;
+    border: none;
+    border-radius: 11px;
+    box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.45);
+    color: #F1F1F1;
+    cursor: pointer;
+    font-family: 'Russo One';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    padding: 1vw 2vw;
+    text-align: center;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+    max-width: 350px;
+}
+
+.big-button:hover {
+    background: #3fa2ff;
+}
+
+
+
+/* ============================================================== */
+
+

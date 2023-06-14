@@ -3,15 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Document</title>
-</head>
-<body>
-    <header>
+    <title>АтлантГаз</title>
 
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/style.css">
+
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Russo+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header flex-row">
+        <div id="header-logo" class="flex-row">
+            <a href="#">
+                <img src="images/logo/Logo.svg" alt="АтлантГаз">
+            </a>
+            <p class="font-os">Расправь плечи в теплом доме</p>
+        </div>
+
+        <div id="header-phone" class="flex-col">
+            <a class="font-ro" href="tel:+79263306834">+7 926 330-68-34</a>
+            <div>
+                <button class="font-os">Срочный вопрос</button>
+            </div>
+        </div>
     </header>
 
-    <main>
+    <section id="main-info" class="flex-row">
+        <div class="main-item flex-col">
+            <div id="weather-items" class="flex-row">
+                <div class="weather-item flex-col">
+                    <div class="weather-item-icons flex-row">
+                        <img class="weather-img" src="images/icons/main-icons/icon-moon.svg" alt="Ночь">
+                        <img class="weather-img" src="images/icons/icon-blue-arrow.svg" alt="">
+                        <img class="weather-img" src="images/icons/main-icons/icon-sun.svg" alt="День">
+                    </div>
+                    <p class="font-os">В любое время дня и ночи</p>
+                </div>
 
-    </main>
+                <div class="weather-item flex-col">
+                    <div class="weather-item-icons flex-row">
+                        <img class="weather-img" src="images/icons/main-icons/icon-cloud.svg" alt="Облачность">
+                        <img class="weather-img" src="images/icons/icon-blue-arrow.svg" alt="">
+                        <img class="weather-img" src="images/icons/main-icons/icon-snow.svg" alt="Снегопад">
+                    </div>
+                    <p class="font-os">Вне зависимости от погодных условий</p>
+                </div>
+            </div>
+
+            <h1 class="font-ro">Доставим газ за 4 часа</h1>
+
+            <p id="main-item-moscow" class="font-ro">в любую точку Москвы и Московской области</p>
+
+            <button class="big-button">Заказать доставку газа в газгольдер</button>
+
+            <p id="main-item-delivery" class="font-os">Доставка газа всегда по актуальным ценам</p>
+        </div>
+
+        <div class="main-item">
+            <img src="images/trucks/truck-main.png" alt="">
+        </div>
+    </section>
+    
+
+    <footer>
+
+    </footer>
+
+    <!-- <script src="scripts/script.js"></script> -->
 </body>
 </html>
