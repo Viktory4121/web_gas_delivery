@@ -301,3 +301,86 @@ h2 {
     line-height: 22px;
 }
 
+
+
+/* ================================================================= */
+
+
+
+#advantages-items{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#advantages-info h2 {
+    color: #F1F1F1;
+    margin-bottom: 2vw;
+}
+
+.advantages-item {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    width: 350px;
+}
+
+/* .advantages-item img {
+    max-width: 120px;
+} */
+
+.advantages-name {
+    color: #2194FF;
+    font-family: 'Russo One';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+}
+
+.advantages-text {
+    color: #F1F1F1;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+}
+
+
+/* =============================================== */
+
+
+
+#advantages-comment {
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+.advantages-comment-item {
+    width: 40%;
+}
+
+#advantages-comment-text{
+    color: #F1F1F1;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+#advantages-comment-text span {
+    color: #2194FF;
+}
+
+#advantages-comment-mark {
+    background: #2194FF;
+    color: #F1F1F1;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 19px;
+    margin-top: 1vw;
+    padding: 0.5vw;
+}
+
+.advantages-comment-item + .advantages-comment-item {
+    margin-left: 1vw;
+}
