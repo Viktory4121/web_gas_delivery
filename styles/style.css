@@ -152,6 +152,10 @@ body {
 /* ============================================================== */
 
 
+section {
+    padding: 2vw 5vw;
+}
+
 
 .big-button {
     background: #2194FF;
@@ -175,8 +179,125 @@ body {
     background: #3fa2ff;
 }
 
+.small-button {
+    background: #2194FF;
+    border: none;
+    border-radius: 50px;
+    color: #F1F1F1;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    padding: 0.5vw 2vw;
+}
+
+.small-button:hover {
+    background: #3fa2ff;
+}
+
+
+
+
+h2 {
+    font-family: 'Russo One';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    text-align: center;
+}
+
 
 
 /* ============================================================== */
 
+
+
+#cost-info {
+    background: rgba(33, 148, 255, 0.05);
+}
+
+#cost-info h2 {
+    color: #2194FF;
+    margin-bottom: 1vw;
+}
+
+
+
+.cost-info-item{
+    align-items: center;
+    width: 33%;
+}
+
+.cost-info-item h3 {
+    color: #F1F1F1;
+    font-family: 'Russo One';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+}
+
+.cost-info-item span {
+    color: #2194FF;
+    font-family: 'Russo One';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.cost-info-item p {
+    color: #F1F1F1;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 1vw 0 2vw 0;
+    max-width: 250px;
+}
+
+
+
+
+/* ================================================================= */
+
+
+
+.cost-info-item img {
+    margin-top: 1vw;
+    max-width: 530px;
+}
+
+#cost-info-perc-p {
+    color: #F1F1F1;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 1vw 0;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.cost-persent-item {
+    padding: 0 1vw;
+}
+
+#cost-percent-line {
+    border-right: 1px solid rgba(241, 241, 241, 0.7);
+}
+
+#cost-info-percent .cost-percent {
+    color: rgba(241, 241, 241, 0.7);
+    /* font-family: 'Russo One'; */
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+}
+
+#cost-info-percent .cost-gas {
+    color: rgba(241, 241, 241, 0.7);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
 
