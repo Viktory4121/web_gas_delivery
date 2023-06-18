@@ -384,3 +384,73 @@ h2 {
 .advantages-comment-item + .advantages-comment-item {
     margin-left: 1vw;
 }
+
+
+
+/* ============================================================ */
+
+
+#volume-info {
+    background: rgba(33, 148, 255, 0.05);
+}
+
+#volume-info h2{
+    color: #2194FF;
+}
+
+
+
+#volume-buttons {
+    margin: 2vw 0;
+}
+
+.vol-button-item {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.vol-button-item input[type=radio] {
+	display: none;
+}
+
+.vol-button-item label {
+    background: rgba(241, 241, 241, 0.2);
+    border: none;
+    border-radius: 20px;
+    color: #F1F1F1;
+	cursor: pointer;
+    display: inline-block;
+    font-family: 'Russo One';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px 2vw;
+    text-align: center;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+    width: 200px;
+    user-select: none;
+}
+
+.vol-button-item input[type=radio]:checked + label {
+	background: #2194FF;
+}
+
+/* #vol-but-item-1:checked .vol-button-img {
+	
+    
+    
+} */
+
+.vol-button-img {
+    background: url(../images/trucks/truck-2000.png) no-repeat center center;
+    /* background-size: 100% auto; */
+    height: 300px;
+    width: 600px;
+}
+
+/* ================================================================= */
+
+
+#feedback-info h2 {
+    color: #F1F1F1;
+} 
