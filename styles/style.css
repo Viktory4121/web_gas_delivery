@@ -371,7 +371,7 @@ h2 {
     color: #2194FF;
 }
 
-#advantages-comment-mark {
+#advantages-comment-mark p {
     background: #2194FF;
     color: #F1F1F1;
     font-size: 14px;
@@ -404,49 +404,73 @@ h2 {
     margin: 2vw 0;
 }
 
-.vol-button-item {
-	display: inline-block;
-	margin-right: 10px;
-}
 
-.vol-button-item input[type=radio] {
-	display: none;
-}
-
-.vol-button-item label {
-    background: rgba(241, 241, 241, 0.2);
+#volume-slyder {
     border: none;
+    overflow: hidden;
+    width: 800px;
+}
+
+#volume-navigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.volume-bar {
+    background: rgba(241, 241, 241, 0.2);
     border-radius: 20px;
     color: #F1F1F1;
 	cursor: pointer;
-    display: inline-block;
     font-family: 'Russo One';
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
+    margin: 1vw;
     padding: 10px 2vw;
     text-align: center;
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
     width: 200px;
-    user-select: none;
 }
 
-.vol-button-item input[type=radio]:checked + label {
-	background: #2194FF;
+.volume-bar:hover {
+    background: #2194FF;
+    transform:scale(1.05);
 }
 
-/* #vol-but-item-1:checked .vol-button-img {
-	
-    
-    
-} */
-
-.vol-button-img {
-    background: url(../images/trucks/truck-2000.png) no-repeat center center;
-    /* background-size: 100% auto; */
-    height: 300px;
-    width: 600px;
+input[name="volume"] {
+    position: absolute;
+    visibility: hidden;
 }
+
+#volume-slyder-buttons {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.volume-slyde {
+    width: 25%;
+    transition: all 0.6s ease;
+}
+.volume-slyde {
+    margin-top: 10vw;
+}
+#volume-button-1:checked ~ #vol-slyde-1 {
+    margin-left: 0;
+}
+#volume-button-2:checked ~ #vol-slyde-1 {
+    margin-left: -25%;
+}
+#volume-button-3:checked ~ #vol-slyde-1 {
+    margin-left: -50%;
+}
+#volume-button-4:checked ~ #vol-slyde-1 {
+    margin-left: -75%;
+}
+
 
 /* ================================================================= */
 

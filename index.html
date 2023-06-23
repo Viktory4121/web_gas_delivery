@@ -207,11 +207,11 @@
                 <img src="images/trucks/truck-third.png" alt="">
             </div>
 
-            <div class="advantages-comment-item">
+            <div class="advantages-comment-item flex-col">
                 <p id="advantages-comment-text" class="font-ro">Благодаря нашему собственному автопарку мы можем
                     давать гарантию, что доставим <span>за 4 часа</span></p>
                 
-                <p id="advantages-comment-mark" class="font-os">Это сильное конкурентное преимущество, которым мы дорожим</p>
+                <div id="advantages-comment-mark"><p class="font-os">Это сильное конкурентное преимущество, которым мы дорожим</p></div>
                 
             </div>
         </div>
@@ -220,29 +220,34 @@
     <section id="volume-info" class="total-center flex-col">
         <h2>Выберите свой объём Газовоза</h2>
 
-        <div id="volume-buttons" class="flex-row">
-            <div class="vol-button-item">
-                <input type="radio" name="volume-button" id="vol-but-item-1" checked>
-                <label for="vol-but-item-1">Малый<br>2000 л.</label>
-            </div>
-            
-            <div class="vol-button-item">
-                <input type="radio" name="volume-button" id="vol-but-item-2">
-                <label for="vol-but-item-2">Средний<br>6000 л.</label>
+        <div id="volume-slyder" class="flex-col">
+            <div id="volume-slyder-buttons">
+                <input type="radio" name="volume" class="volume-button" id="volume-button-1" checked>
+                <input type="radio" name="volume" class="volume-button" id="volume-button-2">
+                <input type="radio" name="volume" class="volume-button" id="volume-button-3">
+                <input type="radio" name="volume" class="volume-button" id="volume-button-4">
+
+                <div id="vol-slyde-1" class="volume-slyde total-center">
+                    <img src="images/trucks/truck-2000.png" alt="">
+                </div>
+                <div class="volume-slyde total-center">
+                    <img src="images/trucks/truck-6000.png" alt="">
+                </div>
+                <div class="volume-slyde total-center">
+                    <img src="images/trucks/truck-10000.png" alt="">
+                </div>
+                <div class="volume-slyde total-center">
+                    <img src="images/trucks/truck-40000.png" alt="">
+                </div>
             </div>
 
-            <div class="vol-button-item">
-                <input type="radio" name="volume-button" id="vol-but-item-3">
-                <label for="vol-but-item-3">Стандартный<br>10 000 л.</label>
-            </div>
-
-            <div class="vol-button-item">
-                <input type="radio" name="volume-button" id="vol-but-item-4">
-                <label for="vol-but-item-4">Оптовый<br>40 000 л.</label>
+            <div id="volume-navigation">
+                <label for="volume-button-1" class="volume-bar">Малый<br>2000 л.</label>
+                <label for="volume-button-2" class="volume-bar">Средний<br>6000 л.</label>
+                <label for="volume-button-3" class="volume-bar">Стандартный<br>10 000 л.</label>
+                <label for="volume-button-4" class="volume-bar">Оптовый<br>40 000 л.</label>
             </div>
         </div>
-
-        <div class="vol-button-img"></div>
 
         <div>
             <button class="big-button">Заказать газ</button>
