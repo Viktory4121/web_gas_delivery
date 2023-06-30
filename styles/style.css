@@ -152,7 +152,8 @@ body {
 /* ============================================================== */
 
 
-section {
+section,
+footer {
     padding: 2vw 5vw;
 }
 
@@ -478,3 +479,286 @@ input[name="volume"] {
 #feedback-info h2 {
     color: #F1F1F1;
 } 
+
+
+
+/* ================================================================= */
+
+
+
+#faq-info {
+    background: rgba(33, 148, 255, 0.05);
+}
+
+#faq-info h2 {
+    color: #2194FF;
+    margin-bottom: 2vw;
+}
+
+/* --------------------- */
+
+.faq-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.faq-head {
+    padding: 2vw;
+}
+
+.faq-head:focus h3,
+.faq-head:hover h3 {
+    color: rgba(33, 148, 255, 1);
+}
+
+.faq-head:focus path,
+.faq-head:hover path {
+    fill: rgba(33, 148, 255, 1);
+}
+
+.faq-head:focus svg,
+.faq-head:hover svg {
+    transform: rotate(270deg);
+    transition: .3s;
+}
+
+.faq-head svg {
+    height: 20px;
+    margin-right: 1vw;
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+.faq-head h3 {
+    color: #F1F1F1;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.faq-body {
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+input[name="faq-checkbox"] {
+    display: none;
+}
+
+input[name="faq-checkbox"]:checked ~ .faq-body {
+    color: rgba(241, 241, 241, 1);
+    font-family: 'Open Sans';
+    height: 100%;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 300;
+    /* -moz-transition: all 0.7s linear 0s;
+    -o-transition: all 0.7s linear 0s; */
+    opacity: 1;
+    padding: 30px;
+    text-align: left;
+    /* transition: all 0.7s linear 0s; */
+    width: 100%;
+    /* webkit-transition: all 0.7s linear 0s; */
+}
+
+
+
+/* ================================================================= */
+
+
+#input-info h2 {
+    color: #F1F1F1;
+    margin-bottom: 1vw;
+    text-align: left;
+}
+
+#input-blocks {
+    justify-content: space-around;
+}
+
+.input-block {
+    width: 40%;
+}
+
+#input-form {
+    width: 80%;
+}
+
+#input-form input,
+#input-form textarea {
+    margin: 1vw 0;
+    padding: 1vw;
+
+    border-radius: 10px;
+    border: 3px solid #DEDEDE;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+
+    color: rgba(45, 45, 45, 1);
+    font-size: 12px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+#input-form textarea {
+    height: 10vw;
+}
+
+#input-form input::placeholder,
+#input-form textarea::placeholder {
+    color: rgba(45, 45, 45, 0.50);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#input-form input:hover,
+#input-form textarea:hover,
+#input-form input:active,
+#input-form textarea:active {
+    border: 3px solid #2194FF;
+}
+
+.input-block .small-button {
+    margin-top: 1vw;
+}
+
+#input-block-photo {
+    background: url(../images/photo/Роман.jpg) no-repeat center center;
+    background-size: cover;
+    height: 450px;
+    width: 350px;
+}
+
+
+
+/* ================================================================= */
+
+
+
+#companies-info {
+    margin: 3vw 0;
+    /* margin: 0 10vw; */
+    /* overflow-x: scroll; */
+    /* padding-bottom: 2vw;
+    padding-left: 10vw; */
+    width: 100%;
+}
+
+.company-item {
+    background: #F1F1F1;
+    border-radius: 20px;
+    height: 70px;
+    width: 200px;
+}
+
+.company-item + .company-item {
+    margin-left: 2vw;
+}
+
+
+
+/* ================================================================= */
+
+
+#contacts-info h2 {
+    color: #2194FF;
+    margin: 2vw;
+    max-width: 50vw;
+}
+
+#contacts-info .big-button {
+    margin-bottom: 2vw;
+}
+
+#contact-items {
+    background: #F1F1F1;
+    border-radius: 33px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    width: 70%;
+}
+
+.contact-item {
+    width: 50%;
+}
+
+#contact-tel-address {
+    padding: 2vw;
+}
+
+.contact-item h3 {
+    color: #2194FF;
+    font-family: 'Russo One';
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    margin-bottom: 1vw;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#contact-text {
+    border-bottom: 1px solid rgba(27, 38, 57, 0.20);
+    color: #1B2639;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+    padding-bottom: 1vw;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.contact-label {
+    color: #2194FF;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 1vw;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.contact-item a {
+    color: #1B2639;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+}
+
+.contact-item iframe {
+    border: 0;
+    border-radius: 33px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* ================================================================= */
+
+
+.footer {
+    width: 100%;
+}
+
+.footer-index {
+    justify-content: space-between;
+    width: 70%;
+}
+
+.footer-index a {
+    color: #F1F1F1;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
