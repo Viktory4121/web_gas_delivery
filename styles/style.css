@@ -266,7 +266,8 @@ h2 {
 
 .cost-info-item img {
     margin-top: 1vw;
-    max-width: 530px;
+    /* max-width: 530px; */
+    width: 30vw;
 }
 
 #cost-info-perc-p {
@@ -324,10 +325,6 @@ h2 {
     padding: 2vw;
     width: 350px;
 }
-
-/* .advantages-item img {
-    max-width: 120px;
-} */
 
 .advantages-name {
     color: #2194FF;
@@ -478,7 +475,11 @@ input[name="volume"] {
 
 #feedback-info h2 {
     color: #F1F1F1;
-} 
+    margin-bottom: 1vw;
+}
+
+/* --------------------- */
+
 
 
 
@@ -505,18 +506,18 @@ input[name="volume"] {
     padding: 2vw;
 }
 
-.faq-head:focus h3,
-.faq-head:hover h3 {
+.faq-head:hover h3,
+input[name='faq-checkbox']:checked ~ .faq-head h3 {
     color: rgba(33, 148, 255, 1);
 }
 
-.faq-head:focus path,
-.faq-head:hover path {
+.faq-head:hover path,
+input[name='faq-checkbox']:checked ~ .faq-head path {
     fill: rgba(33, 148, 255, 1);
 }
 
-.faq-head:focus svg,
-.faq-head:hover svg {
+.faq-head:hover svg,
+input[name='faq-checkbox']:checked ~ .faq-head svg {
     transform: rotate(270deg);
     transition: .3s;
 }
@@ -641,7 +642,7 @@ input[name="faq-checkbox"]:checked ~ .faq-body {
 
 
 #companies-info {
-    margin: 3vw 0;
+    margin-top: 6vw;
     /* margin: 0 10vw; */
     /* overflow-x: scroll; */
     /* padding-bottom: 2vw;
@@ -667,7 +668,7 @@ input[name="faq-checkbox"]:checked ~ .faq-body {
 
 #contacts-info h2 {
     color: #2194FF;
-    margin: 2vw;
+    margin-bottom: 2vw;
     max-width: 50vw;
 }
 
@@ -770,34 +771,3 @@ input[name="faq-checkbox"]:checked ~ .faq-body {
 /* ================================================================= */
 /* ================================================================= */
 /* ================================================================= */
-/* root - thanks.html */
-
-#thanks-block {
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-#thanks-block h2 {
-    color: #2194FF;
-    font-family: 'Russo One';
-    font-size: 48px;
-    font-weight: 400;
-    letter-spacing: 2.4px;
-    margin-top: 5vw;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-#thanks-block p {
-    color: #F1F1F1;
-    font-family: 'Russo One';
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 1.2px;
-    margin-bottom: 3vw;
-    margin-top: 2vw;
-    text-align: center;
-    text-transform: uppercase;
-    width: 30vw;
-}

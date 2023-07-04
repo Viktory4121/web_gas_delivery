@@ -1,0 +1,189 @@
+.slyder-grid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 80px 80px 80px 80px 80px 1fr;
+    grid-template-rows: 500px 50px;
+    justify-items: center;
+    margin: 0;
+}
+
+.slyder-scroll {
+    align-items: center;
+    display: flex;
+    grid-column: 1 / 8;
+    grid-row: 1 / 2;
+    height: 600px;
+    --items: 5;
+    justify-content: center;
+    --middle: 3;
+    overflow: hidden;
+    perspective: 600px;
+    pointer-events: none;
+    --position: 1;
+    transform-style: preserve-3d;
+    width: 100vw;
+}
+  
+.slyder-scroll-item {
+    --abs: max(calc(var(--r) * -1), var(--r));
+    background: #F1F1F1;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    height: 350px;
+    position: absolute;
+    --r: calc(var(--position) - var(--offset));
+    transform: rotateY(calc(-10deg * var(--r)))
+      translateX(calc(-300px * var(--r)));
+    transition: all 0.25s linear;
+    width: 750px;  
+    z-index: calc((var(--position) - var(--abs)));
+}
+
+.slyder-scroll-item-grey {
+    align-items: center;
+    background: rgba(51, 51, 51, .3);
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 2;
+}
+
+
+
+/* -------------------------------------- */
+
+
+
+.slyder-scroll-item:nth-of-type(1) {
+    --offset: 1;
+}
+.slyder-scroll-item:nth-of-type(2) {
+    --offset: 2;
+}
+.slyder-scroll-item:nth-of-type(3) {
+    --offset: 3;
+}
+.slyder-scroll-item:nth-of-type(4) {
+    --offset: 4;
+}
+
+
+
+/* -------------------------------------- */
+
+
+.input-slyder:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.input-slyder:nth-of-type(1):checked ~ .slyder-scroll {
+    --position: 1;
+}
+.input-slyder:nth-of-type(1):checked ~ .slyder-scroll #slyder-grey-1{
+    background: transparent;
+}
+
+
+.input-slyder:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+} 
+.input-slyder:nth-of-type(2):checked ~ .slyder-scroll {
+    --position: 2;
+}
+.input-slyder:nth-of-type(2):checked ~ .slyder-scroll #slyder-grey-2{
+    background: transparent;
+}
+
+
+.input-slyder:nth-of-type(3) {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+.input-slyder:nth-of-type(3):checked ~ .slyder-scroll {
+    --position: 3;
+}
+.input-slyder:nth-of-type(3):checked ~ .slyder-scroll #slyder-grey-3{
+    background: transparent;
+}
+
+
+.input-slyder:nth-of-type(4) {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+.input-slyder:nth-of-type(4):checked ~ .slyder-scroll {
+    --position: 4;
+}
+.input-slyder:nth-of-type(4):checked ~ .slyder-scroll #slyder-grey-4{
+    background: transparent;
+}
+
+
+/* ----------------------------------------- */
+
+.input-slyder {
+    cursor: pointer;
+}
+
+.input-slyder[type="radio"]:checked, 
+.input-slyder[type="radio"]:not(:checked) {
+    appearance: none;
+    background-color: rgba(241, 241, 241, 0.20);
+    border: none;;
+    border-radius: 20px;
+    height: 20px;
+    -moz-appearance: none;
+    outline: none;
+    transition: 0.2s all linear;
+    -webkit-appearance: none;
+    width: 60px;
+}
+
+.input-slyder[type="radio"]:checked {
+    background-color: #2194FF;
+    /* border: 6px solid #D1A954; */
+}
+
+
+
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+/* содержание слайдов */
+
+.feedback-photo {
+    border-radius: 20px;
+    height: 250px;
+    overflow: hidden;
+    width: 200px;
+}
+
+.feedback-photo img {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.feedback-text-name {
+    color: #2194FF;
+    font-family: 'Russo One';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.feedback-text-city {
+    color: #2D2D2D;
+    font-family: 'Russo One';
+    font-size: 18px;
+    font-weight: 400;
+    margin: 5px 0 20px 0;
+}
+
+.feedback-text-full {
+    color: #2D2D2D;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 400px;
+}
