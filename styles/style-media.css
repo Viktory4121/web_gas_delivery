@@ -43,6 +43,10 @@
         font-size: 13px;
         max-width: 250px;
     }
+    .slyder-scroll-item {
+        transform: rotateY(calc(0deg * var(--r)))
+          translateX(calc(0 * var(--r)));
+    }
 
 
 
