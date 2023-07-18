@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 80px 80px 80px 80px 80px 1fr;
     grid-template-rows: 500px 50px;
     justify-items: center;
-    margin: 0;
+    /* margin: 0; */
 }
 
 .slyder-scroll {
@@ -13,15 +13,15 @@
     grid-column: 1 / 8;
     grid-row: 1 / 2;
     height: 600px;
-    --items: 5;
+    --items: 4;
     justify-content: center;
-    --middle: 3;
+    --middle: 2;
     overflow: hidden;
     perspective: 600px;
     pointer-events: none;
     --position: 1;
     transform-style: preserve-3d;
-    width: 100vw;
+    width: 80vw;
 }
   
 .slyder-scroll-item {
@@ -35,7 +35,8 @@
     transform: rotateY(calc(-10deg * var(--r)))
       translateX(calc(-300px * var(--r)));
     transition: all 0.25s linear;
-    width: 750px;  
+    width: 750px;
+    /* width: 45vw; */
     z-index: calc((var(--position) - var(--abs)));
 }
 
@@ -71,6 +72,7 @@
 
 
 /* -------------------------------------- */
+
 
 
 .input-slyder:nth-of-type(1) {
@@ -121,7 +123,10 @@
 }
 
 
+
 /* ----------------------------------------- */
+
+
 
 .input-slyder {
     cursor: pointer;
@@ -153,11 +158,13 @@
 /* ===================================================== */
 /* содержание слайдов */
 
+
+
 .feedback-photo {
     border-radius: 20px;
-    height: 250px;
+    max-height: 250px;
+    max-width: 200px;
     overflow: hidden;
-    width: 200px;
 }
 
 .feedback-photo img {

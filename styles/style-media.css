@@ -1,0 +1,77 @@
+@media (max-width: 992px) {
+    section,
+    footer {
+        padding: 4vw;
+    }
+
+
+    h2,
+    .cost-percent,
+    .cost-info-item h3,
+    #advantages-comment-text,
+    .contact-item h3 {
+        font-size: 30px;
+    }
+
+    #contact-text,
+    .contact-label,
+    .contact-item a {
+        font-size: 14px;
+    }
+
+    .main-item h1 {
+        font-size: 55px;
+    }
+    
+    #contact-items {
+        width: 85%;
+    }
+
+
+
+    .slyder-scroll-item {
+        height: 350px;
+        width: 600px;
+    }
+    .feedback-text-name {
+        font-size: 20px;
+    }
+    .feedback-text-city {
+        font-size: 15px;
+    }
+    .feedback-text-full {
+        font-size: 13px;
+        max-width: 250px;
+    }
+
+
+
+    .volume-bar {
+        font-size: 15px;
+        max-width: 150px;
+    }
+
+    #advantages-comment-item-image{
+        width: 0;
+    }
+
+    .advantages-comment-item {
+        width: 80%;
+    }
+    
+
+}
+
+
+
+/* @media (max-width: 992px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+    
+} */
